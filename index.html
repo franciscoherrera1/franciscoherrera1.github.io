@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francisco Herrera | Engineering Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #263449;
+    position: sticky;
+    top: 0;
+    background: #0b1120;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+section {
+    padding: 85px 10%;
+    scroll-margin-top: 75px;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag {
+    color: #60a5fa;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #60a5fa;
+}
+
+h3 {
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #aebdd0;
+    max-width: 800px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.button:hover {
+    background: #3b82f6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #131e30;
+    padding: 25px;
+    border: 1px solid #263449;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #172b48;
+    color: #93c5fd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #263449;
+    color: #64748b;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FH | ENGINEERING</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <span class="tag">Electrical & Controls Engineering</span>
+
+    <h1>Francisco Herrera</h1>
+
+    <h2>Controls & Automation Engineer</h2>
+
+    <p>
+        Welcome to my engineering portfolio. This website showcases
+        my engineering projects, technical experience, and work
+        involving industrial automation, PLC programming,
+        electrical design, and control systems.
+    </p>
+
+    <a href="#projects" class="button">Explore My Projects</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am an Electrical and Computer Engineering Technology
+        graduate from Western Carolina University, currently
+        working as a Design Engineer.
+    </p>
+    <br>
+    <p>
+        My engineering interests include industrial automation,
+        PLC programming, process control, electrical design,
+        and industrial communication systems.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Featured Engineering Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>PLC Heater Control Systems</h3>
+            <p>
+                Industrial heater control systems utilizing
+                Siemens PLCs, analog and digital I/O,
+                temperature feedback, and PID control.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Industrial PLC Integration</h3>
+            <p>
+                PLC-to-PLC communication and integration
+                involving Siemens Profinet, Allen-Bradley
+                EtherNet/IP, and industrial gateways.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Advanced PID Control</h3>
+            <p>
+                Development of temperature control strategies
+                involving PID tuning, autotuning,
+                manual/automatic operation, and HMI integration.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <span class="skill">Siemens TIA Portal</span>
+        <span class="skill">Studio 5000</span>
+        <span class="skill">PLC Programming</span>
+        <span class="skill">PID Control</span>
+        <span class="skill">Profinet</span>
+        <span class="skill">EtherNet/IP</span>
+        <span class="skill">Modbus TCP/RTU</span>
+        <span class="skill">Electrical Design</span>
+        <span class="skill">HMI Development</span>
+        <span class="skill">Python</span>
+        <span class="skill">C++</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        Thank you for visiting my engineering portfolio.
+        Feel free to connect with me regarding engineering
+        projects and professional opportunities.
+    </p>
+
+    <a href="https://github.com/franciscoherrera1"
+       class="button" target="_blank">
+       Visit My GitHub
+    </a>
+</section>
+
+<footer>
+    © 2026 Francisco Herrera | Engineering Portfolio
+</footer>
+
+</body>
+</html>
