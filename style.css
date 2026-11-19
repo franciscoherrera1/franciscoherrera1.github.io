@@ -1,1 +1,152 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #263449;
+    position: sticky;
+    top: 0;
+    background: #0b1120;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+section {
+    padding: 85px 10%;
+    scroll-margin-top: 75px;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag {
+    color: #60a5fa;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #60a5fa;
+}
+
+h3 {
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #aebdd0;
+    max-width: 800px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.button:hover {
+    background: #3b82f6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #131e30;
+    padding: 25px;
+    border: 1px solid #263449;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #172b48;
+    color: #93c5fd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #263449;
+    color: #64748b;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
